@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    background-color: #7798AB;
+}
+
+body {
+    text-align: center;
+}
+
+#dice_container{
+    background-color: white;
+    border-radius: 13%;
+    border: 5px solid black;
+    width: 20vh;
+    height: 20vh;
+    margin: auto;
+    margin-top: 7%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#dice_container > div{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.animato {
+    animation: rimbalzo 1s ease-in-out 1;
+  }
+
+h2 {
+    font-size: 5vh;
+    padding-top: 1vh;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@keyframes rimbalzo {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20%);
+    }
+    60% {
+      transform: translateY(-10%);
+    }
+  }
+
+button {
+    margin-top: 5%;
+    padding: 0.5% 1.2% 0.5% 1.2%;
+    font-size: 18px;
+    border-radius: 50vh;
+    background-color: #DBF9F4;
+    font-weight: 600;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#first {
+    background-image: url("ONE.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+#second {
+    background-image: url("TWO.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+#third {
+    background-image: url("THREE.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+#fourth {
+    background-image: url("FOUR.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+#fifth {
+    background-image: url("FIVE.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+#sixth {
+    background-image: url("SIX.png");
+    border-radius: 13%;
+    background-color: white;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {  /* Smartphone Site */
+    button{
+        padding: 10px 30px 10px 30px;
+        font-size: 70px;
+    }
+
+    h2{
+        font-size: 120px;
+    }
+
+    #dice_container{
+        margin-top: 30%;
+    }
+  }
